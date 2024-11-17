@@ -89,6 +89,7 @@ def reset():
     root.destroy()
     selected = ""
     edges = []
+    inputParser()
     canvas()
 
 def buttonsToTop():
@@ -311,12 +312,10 @@ def decodeResult(vars):
     for i in vars:
         if (int(i) > 0):
             path.append(int(i))
-    print(path)
     
     decodedPath = {}
     for i in range(len(path)):
         decodedPath[str(i + 1)] = path[i] - (numOfVertices * i)
-    print(decodedPath)
     
     decodedPath = dict(sorted(decodedPath.items(), key=lambda x:x[1]))
     return decodedPath
