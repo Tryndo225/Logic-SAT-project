@@ -42,9 +42,17 @@ Encoding to [Conjuctive normal form (CNF)](https://en.wikipedia.org/wiki/Conjunc
 
 Then using this format of variables we crete the problem using a few simple statements makers:
 ### oneVertexAtPos
-> This funtion ensures that each position in the path has at least one vertex. (For every pos n in the path $(V_1)_n$ or $(V_2)_n$ or $(V_3)_n$ or ... or $(V_n)_n$)
+> This function ensures that each position in the path has at least one vertex. (For every pos n in the path $(V_1)_n$ or $(V_2)_n$ or $(V_3)_n$ or ... or $(V_n)_n$)
 ## everyVertexMaxOnce
-> This funtion ensures that each vertex appears in path maximum once.
+> This function ensures that each vertex appears in path maximum once. (For v in vertexes, for n1, n2 in positions v isn't on n1 or isn't on n2)
+### everyVertexVisited
+> This function ensures that each vertex appears in the path at at least one position. (For every vertex v in the graph $(V_v)_1$ or $(V_v)_2$ or $(V_v)_3$ or ... or $(V_v)_n$)
+### maxOneVertexAtEachPos
+> This function ensures that each position in path cannot be occupied 2 vertices at once. (For n in positions, for v1, v2 in vertices: v1!=v2, v1 isn't on n or v2 isn't on n)
+### pathConsistOfActualEdges
+> This function ensures that the path consist only of valid edges inputed. (For v1, v2 from vartices, if (v1, v2) not in edges: for every position n v1 not on pos n or v2 not on pos n+1)
+
+This leaves us with a functional [Conjuctive normal form (CNF)](https://en.wikipedia.org/wiki/Conjunctive_normal_form) equation, we can just send to [Glucose 4.2.1](https://github.com/audemard/glucose/releases/tag/4.2.1).
 
 
 ## Documentation
