@@ -2,7 +2,8 @@
 > This is a solution for a homework from Propositional and Predicate Logic (NAIL062) and it is a python script that is resposible for encoding a set of vertexes and edges into a suitable formula for sat solver to find a hamiltonina path. It also calls the solver and interprets it's solution to human readable and understandable form.
 
 ## How to run
-**!!!Important!!!** it needs [Glucose 4.2.1](https://github.com/audemard/glucose/releases/tag/4.2.1) to run and count's on it's proper instalation and the fact that is able to be run globaly and thus located in `/usr/local/bin/` folder.
+>[!IMPORTANT]
+>It needs [Glucose 4.2.1](https://github.com/audemard/glucose/releases/tag/4.2.1) to run and count's on it's proper instalation and the fact that is able to be run globaly and thus located in `/usr/local/bin/` folder.
 
 ### Step-by-step walkthrough
 Upon running the script you are prompted to choose the amount of vertexes, this requires the user to input any number, however high numbers make the UI hectic and nearly impossible to work in thus forcing user to rely on the input text field and console as output. 
