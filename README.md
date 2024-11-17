@@ -70,3 +70,9 @@ To choose the experiment to conduct was no easy task, however at the end the exp
 ![Experiment(graph)](/assets/images/experimentGraph.png "Experiment Graph") <br>
 As we can see the time taken rises exponentialy with the number of vertices. This can be expected due to the nature of the problem. It is important to mention that some results had to be terminated prematurely as though they took more than 20 mins to calculate with end in sight (and I wasn't sure if i didn't cause Glucose to freeze), although it can be noted that all of these were terminated in the SAT solver step.  However, it remains true that even similar number of vertexes can wildly differ, that said the overall time complexity rises exponentialy. Further testing expecially with non-hamiltonian inputs could yield interesting results but due to time constrains I am unable to do so.
 
+## Additional tools
+This section contains a quick explanation of [Hamiltonian example producer](/hamiltonian-example-producer.py) and [Example shuffler](/example-shuffler.py):
+### [Hamiltonian example producer](/hamiltonian-example-producer.py)
+> Prompts user to select a number of vertices and creates a hamiltonian path through them as an output.
+### [Example shuffler](/example-shuffler.py) 
+> Propmts user to give an input in valid form and prints a shuffled version of the same input.
