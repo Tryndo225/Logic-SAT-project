@@ -22,7 +22,8 @@ The **Parse** button:
 
 The **Input Field** area:
 > here the user can manualy make changes to the edges of the graph. The input is simple, use `;` as a delimiter between edges and `,` as a delimiter between vertexes of an edge. For better readability `(`, `)`, and `<SpaceBar>` can be used, 
-however these are competely ignored during parsing and surve just to mek the input more user friendly. Therefore caution with `;` and `,` and their proper use is advised.
+however these are competely ignored during parsing and surve just to mek the input more user friendly. Therefore caution with `;` and `,` and their proper use is advised. <br>
+> **Example input:** On 5 vertexes: (1,2);(2,3);(3,4);(4,5) => reuslts in a output of hamiltonian path going through vertexes: 1, 2, 3, 4, 5
 
 The **Results**/**Input** buttons:
 > these serve as a means of traversing between results and input screen, beware that none of them make any change to the content of the pages thus for new result screen **Solve** button has to be pressed or the last result will remain displayed.
@@ -30,3 +31,9 @@ The **Results**/**Input** buttons:
 ## Documentation
 This script is resposible for encoding an graph input into a [Conjuctive normal form (CNF)](https://en.wikipedia.org/wiki/Conjunctive_normal_form) for [Hamiltonian path](https://en.wikipedia.org/wiki/Hamiltonian_path) detection. <br>
 It has both a User interface input method and a **Input Field** input method. For further information look at [Action Fields](#action-fields) and [Step-by-step walkthrough](#step-by-step-walkthrough).
+
+## Example inputs
+1. Complete Graph on 3 vetexes: `(1,3);(3,2);(2,1);(1,2);(2,3);(3,1)` ![Complete Graph on 3 (example 1)](/assets/images/san-juan-mountains.jpg "San Juan Mountains") Any path of 3 vertex is a valid hamiltonian path. Path through `2, 1, 3` found.
+2. Second item
+3. Third item
+4. Fourth item 
