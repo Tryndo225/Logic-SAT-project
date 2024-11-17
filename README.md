@@ -33,7 +33,7 @@ This script is resposible for encoding an graph input into a [Conjuctive normal 
 It has both a User interface input method and a **Input Field** input method. For further information look at [Action Fields](#action-fields) and [Step-by-step walkthrough](#step-by-step-walkthrough).
 
 ## Example inputs
-1. Complete Graph on 3 vetexes: `(1,3);(3,2);(2,1);(1,2);(2,3);(3,1)` ![Complete Graph on 3 (example 1)](/assets/images/san-juan-mountains.jpg "San Juan Mountains") Any path of 3 vertex is a valid hamiltonian path. Path through `2, 1, 3` found.
-2. Second item
+1. Complete Graph on 3 vetexes: `(1,3);(3,2);(2,1);(1,2);(2,3);(3,1)` ![Complete Graph on 3 (example 1)](/assets/images/completeOn3) Any path of 3 vertex is a valid hamiltonian path. Path through `2, 1, 3` found.![Complete Graph on 3 result(example 1)](/assets/images/completeOn3Result)
+2. Non-Haniltonian graph on 5 vertexes: `(1,4);(2,1);(1,3);(4,5);(4,3);(1,5);(3,5)`
 3. Third item
 4. Fourth item 
