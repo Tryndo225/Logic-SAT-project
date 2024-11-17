@@ -4,13 +4,13 @@
 ## How to run
 **!!!Important!!!** it needs [Glucose 4.2.1](https://github.com/audemard/glucose/releases/tag/4.2.1) to run and count's on it's proper instalation and the fact that is able to be run globaly and thus located in `/usr/local/bin/` folder.
 
-### Step-by-step walkthrough <a name="walkthrough"></a>
+### Step-by-step walkthrough<a name="walkthrough"></a>
 Upon running the script you are prompted to choose the amount of vertexes, this requires the user to input any number, however high numbers make the UI hectic and nearly impossible to work in thus forcing user to rely on the input text field and console as output. 
 When the number of vertices is entered a UI using the python `tkinter` library is displayed. This is where most of the user interaction will happen. 
 Use your mouse to select vertexes to connect with an edge (clicking on a vertex marks it with red fill and selecting another one will create an edge (if vertex is selected it can be clicked again to be unselected)). If the an edge is alredy present between vertexes selecting them again (in the same order) will delete the edge. 
 Edges are directed thus for undirected uses user has to create one edge for one direction and another one for the backwards traversal. When the wanted input is entered user is to click one of the action buttons to perform actions.
 
-### Action Fields <a name="actionfields"></a>
+### Action Fields<a name="actionfields"></a>
 The **Solve** button: 
 > sends the proble to [Glucose 4.2.1](https://github.com/audemard/glucose/releases/tag/4.2.1) to solve and takes you to a seperate window where (if any possible) a valid hamiltonian path is displayed in none exists a empty graph will be displayed.
 
